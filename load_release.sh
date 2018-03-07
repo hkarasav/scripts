@@ -1,6 +1,6 @@
 #### This script is used to checkout all sub-projects to a specific release
 
-set -e # Any subsequent(*) commands which fail will cause the shell script to exit immediately. Undo with 'set +e'
+set -e # When any of the next commands fail the shell script will exit immediately. 
 RELEASE=$1
 if [ $# != 1 ] ; then echo "ERROR in execution. Usage: ./load_release.sh <release e.g. software-10-0>"; exit 1 ; fi
 
